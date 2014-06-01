@@ -83,3 +83,10 @@ NB. Equivalently, for much faster execution, we could take a 2D array and take m
    'n k'=: 10 6
    a=:(n, 1e6) $ ?(n*1e6)#0
    (+/%#)1>+/a^k NB. = 0.313613   
+
+NB. 15) https://math.stackexchange.com/questions/816803/probability-of-lies-a-point-in-a-random-triangle
+   0.5*(+/%#)(([: | [: -/ .* (3 1 $ 1) ,.~ 3 2 $ [: ? 6 # ])"0) 1000000#0 NB. A terse way in J !
+NB. If a more verbose way is required, but this takes about four times longer to execute.
+    det=: -/ .*                               NB. Computes determinant of a matrix (for area of traingle)
+    sim=: 3 : '| det (3 2 $ ?6#0),. 3 1 $ 1'  NB. Get absolute value of area
+    0.5 * (+/%#)(sim"0)1000000#0              NB. Half the average for a million trials 
