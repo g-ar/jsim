@@ -90,3 +90,20 @@ NB. If a more verbose way is required, but this takes about four times longer to
     det=: -/ .*                               NB. Computes determinant of a matrix (for area of traingle)
     sim=: 3 : '| det (3 2 $ ?6#0),. 3 1 $ 1'  NB. Get absolute value of area
     0.5 * (+/%#)(sim"0)1000000#0              NB. Half the average for a million trials 
+    
+NB. 16) https://math.stackexchange.com/questions/822420/probability-coin-flip
+    sim=: 3 : '0<+/10=10+/\?35#2'
+    (+/%#)(sim"0)1e6#0  NB. ~ 0.013243, close to actual answer of 0.013151410734280944
+NB. For faster execution, we need to get a tacit definition, write like this to get it.
+    sim=: 13 : '0<+/10=10+/\?35#y'
+NB. Now, simply entering   sim    in the J console, we can see the tacit definition, and use it in the modified program:
+    (+/%#)((0 < [: +/ 10 = 10 +/\ [: ? 35 # ])"0)1e6#2
+NB. We may compare the resources utilized by both versions:
+    6 !: 2 '(+/%#)(sim"0)1e6#0'  NB. Time for execution -- about 7.92s (intel dual-core, 2Ghz)
+    6 !: 2 '(+/%#)((0 < [: +/ 10 = 10 +/\ [: ? 35 # ])"0)1e6#2'  NB. about 1.96s, ~ 4x faster
+    
+    7 !: 2 '(+/%#)(sim"0)1e6#0'  NB. Space used for execution -- 2106624 bytes
+    7 !: 2 '(+/%#)((0 < [: +/ 10 = 10 +/\ [: ? 35 # ])"0)1e6#2'  NB. 9447040 bytes ~ 4.5x more space, so we traded space for time
+    
+    
+    
