@@ -89,6 +89,9 @@ a=:3 3 $ 1+?9#6
 0<+/1=(+/"1 ~:"1 |:a),(+/"1 ~:"1 a),(+/ ~: diag a),(+/ ~: diag (|."1) a)
 )
    (+/%#)(sim"0)1e5#0  NB. ~ 0.20375
+NB. For the precise answer (i.e. counting the sample space instead of simulation):
+   b=:((3 3 $ 1 + (9$6) #: ])"0) i.6^9
+   +/((0 < [: +/ 1 = ([: +/"1 [: ~:"1 |:) , ([: +/"1 ~:"1) , ([: +/ [: ~: diag) , [: +/ [: ~: [: diag |."1)"2) b NB. 2046216, P=0.203044
    
 NB. 31) https://math.stackexchange.com/questions/740336/the-probability-of-the-first-roll-having-the-highest-number-in-n-consecutive-rol
    n=:15
