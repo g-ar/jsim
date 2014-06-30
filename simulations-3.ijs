@@ -52,3 +52,50 @@ NB. Using definitions from concrete math companion
    sim=: 3 : '((1 = #) * [: +/ 7 = ]) mode (?5#36){a'
    (+/%#)(sim"0)1e5#0
    
+NB. 40) https://math.stackexchange.com/questions/846442/generating-function-probability-regaridng-coin-toss/
+   sim=: 3 : 0
+a=:?25#2
+(0=+/6=6+/\a)*(8=+/0=a)
+)
+   (+/%#)(sim"0)1e6#0
+   
+NB. 41) https://math.stackexchange.com/questions/846315/using-markov-chain-to-find-average-and-probability/
+
+(+/%#)(([: +/ i. = ?~)"0)1e6#10        NB. the average for (a)
+(+/%#)((4 < [: +/ i. = ?~)"0)1e6#10    NB. the probability for (a)
+
+NB. for case (b) using the optimal strategy
+   nn=:10 
+   sim=: 3 : 0
+tot=:0
+i=:0
+a=:nn?nn
+guess=:0
+while. i<nn do. 
+if. guess=i{a do. 
+tot=:tot+1
+guess=:guess+1
+end. 
+i=:i+1
+end.
+tot return.
+)
+   (+/%#)(sim"0)1e5#0     NB. expected # of correct guesses
+   (+/%#) 4<(sim"0)1e5#0  NB. probability of at least 5 correct guesses
+   
+NB. 42) https://math.stackexchange.com/questions/847763/drawing-previously-undrawn-cards-from-a-deck/
+   sim=: 3 : 0
+a=:(12#0),(7#1)       NB. y=19, x=12
+n=:0
+while. n<(nth-1) do.  NB. checking nth pick
+a=:(1) (?#a)}a
+n=:n+1
+end.
+0=(?#a){a
+)
+   nth=:7
+   (+/%#)(sim"0)1e5#0 NB. close to 408146688/893871739 ~ 0.4566
+   
+NB. 43) http://math.stackexchange.com/questions/849751/non-geometric-way-to-calculate-expected-value-of-breaks
+   sim=: 3 : '\:~2-/\\:~0,1,?3#0'   NB. stick broken at 3 points
+   (+/%#)(sim"0)1e5#0               NB. gives expected lengths of maximum, next highest, etc. till minimum.
