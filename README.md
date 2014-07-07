@@ -19,7 +19,8 @@ This directory contains some simulations done in [J](http://jsoftware.com/), an 
 10. https://math.stackexchange.com/questions/800406/broken-trucks-at-a-road
 11. https://math.stackexchange.com/questions/801470/extracting-balls-from-a-basket-until-all-have-the-same-colour
 12. https://math.stackexchange.com/questions/749336/k-items-in-n-buckets-number-of-buckets-with-at-least-2-items
-13. https://math.stackexchange.com/questions/811516/probability-that-yz-1-xz-2/   
+13. https://math.stackexchange.com/questions/811516/probability-that-yz-1-xz-2
+14. Probability that sum of num^6 < 1, 10 numbers taken from uniform distribution   
 15. https://math.stackexchange.com/questions/816803/probability-of-lies-a-point-in-a-random-triangle
 16. https://math.stackexchange.com/questions/822420/probability-coin-flip
 
@@ -33,7 +34,9 @@ This directory contains some simulations done in [J](http://jsoftware.com/), an 
 22. https://math.stackexchange.com/questions/324387/two-dice-roll-questions-related-to-rolling-a-yahtzee
 23. https://math.stackexchange.com/questions/684426/on-average-how-many-times-does-one-need-to-roll-three-fair-dice-to-get-a-sum-of
 24. https://math.stackexchange.com/questions/192177/how-many-times-to-roll-a-die-before-getting-two-consecutive-sixes
+25. If the above question is changed to getting a '5 6' instead
 26. https://math.stackexchange.com/questions/28905/expected-time-to-roll-all-1-through-6-on-a-die
+27. The expected number of throws till all 6 consecutive throws show up different faces
 28. https://math.stackexchange.com/questions/736211/how-many-times-does-a-single-fair-die-have-to-be-rolled-for-a-number-to-repeat
 29. https://math.stackexchange.com/questions/369582/rolling-a-fair-die-4-times-what-is-the-probability-of-getting-an-increasing-seq
 30. https://math.stackexchange.com/questions/339484/three-equal-die-rolls-in-a-row-in-a-3-times-3-array
