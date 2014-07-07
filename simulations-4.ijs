@@ -32,3 +32,13 @@ tb=:I.12=+/\(?200#100){b
 )
    (+/%#)(sim"0)1e5#0
 
+NB. 46) https://math.stackexchange.com/questions/854612/the-probability-that-x-birthdays-lie-within-n-days-of-each-other
+   freq=:(# , {.)/.~
+   xx=:5
+   nn=:150
+   sim =: 3 : 0
+a=:(i.365),?xx#365
+b=:({."1 freq a)-1                     NB. the frequency list of the birthdays
+0<+/xx=(nn+1)+/\(] ,~ ] }.~ nn -~ #)b  NB. add the last 40 elements to the head, then we can easily get a running sum
+)
+   (+/%#)(sim"0)1e6#0
