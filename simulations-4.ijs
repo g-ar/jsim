@@ -39,6 +39,11 @@ NB. 46) https://math.stackexchange.com/questions/854612/the-probability-that-x-b
    sim =: 3 : 0
 a=:(i.365),?xx#365
 b=:({."1 freq a)-1                     NB. the frequency list of the birthdays
-0<+/xx=(nn+1)+/\(] ,~ ] }.~ nn -~ #)b  NB. add the last 40 elements to the head, then we can easily get a running sum
+0<+/xx=(nn+1)+/\(] ,~ ] }.~ nn -~ #)b  NB. add the last nn elements to the head, then we can easily get a running sum
 )
    (+/%#)(sim"0)1e6#0
+   
+NB. 47) http://math.stackexchange.com/questions/861856/expected-number-of-parallel-tosses-where-each-coin-gets-heads-at-least-once-of   
+   sim5=: 3 : '{.1+I.5=+/-.0=(+/\"1) 5 50 $ ?250#2'
+   avg(sim5"0)1e5#0
+   
