@@ -43,7 +43,14 @@ b=:({."1 freq a)-1                     NB. the frequency list of the birthdays
 )
    (+/%#)(sim"0)1e6#0
    
-NB. 47) http://math.stackexchange.com/questions/861856/expected-number-of-parallel-tosses-where-each-coin-gets-heads-at-least-once-of   
+NB. 47) https://math.stackexchange.com/questions/861856/expected-number-of-parallel-tosses-where-each-coin-gets-heads-at-least-once-of   
    sim5=: 3 : '{.1+I.5=+/-.0=(+/\"1) 5 50 $ ?250#2'
-   avg(sim5"0)1e5#0
+   (+/%#)(sim5"0)1e5#0
+   
+NB. 48) https://math.stackexchange.com/questions/911571/probability-rolling-a-dice-5-times/
+   sim =: 3 : 0
+a=:1+?5#6
+(+/+/1 2=/a)>(+/6=a)
+)
+   (+/%#)(sim"0)1e5#0
    

@@ -63,3 +63,5 @@ This directory contains some simulations done in [J](http://jsoftware.com/), an 
 44. https://math.stackexchange.com/questions/850244/asymptoticly-how-many-random-students-do-i-have-to-mark-before-ive-marked-two
 45. https://math.stackexchange.com/questions/850857/an-archery-game
 46. https://math.stackexchange.com/questions/854612/the-probability-that-x-birthdays-lie-within-n-days-of-each-other
+47. https://math.stackexchange.com/questions/861856/expected-number-of-parallel-tosses-where-each-coin-gets-heads-at-least-once-of
+48. https://math.stackexchange.com/questions/911571/probability-rolling-a-dice-5-times
