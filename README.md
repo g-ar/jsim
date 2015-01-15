@@ -65,3 +65,7 @@ This directory contains some simulations done in [J](http://jsoftware.com/), an 
 46. https://math.stackexchange.com/questions/854612/the-probability-that-x-birthdays-lie-within-n-days-of-each-other
 47. https://math.stackexchange.com/questions/861856/expected-number-of-parallel-tosses-where-each-coin-gets-heads-at-least-once-of
 48. https://math.stackexchange.com/questions/911571/probability-rolling-a-dice-5-times
+49. https://math.stackexchange.com/questions/953908/probability-that-the-sum-of-three-integer-numbers-from-1-to-100-is-more-than-1
+50. https://math.stackexchange.com/questions/951236/probability-of-exactly-2-low-rolls-in-5-throws-of-a-die
+51. https://math.stackexchange.com/questions/1061083/average-time-to-fill-boxes-with-balls/
+52. https://math.stackexchange.com/questions/1097630/break-a-stick-into-2-expected-length-of-shorter-stick
