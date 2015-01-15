@@ -54,3 +54,29 @@ a=:1+?5#6
 )
    (+/%#)(sim"0)1e5#0
    
+NB. 49) https://math.stackexchange.com/questions/953908/probability-that-the-sum-of-three-integer-numbers-from-1-to-100-is-more-than-1
+    (+/%#) ((100 < [: +/ 1 + 3 ? ])"0) 1e6#100
+    
+NB. 50) https://math.stackexchange.com/questions/951236/probability-of-exactly-2-low-rolls-in-5-throws-of-a-die
+   (+/2=(+/"1)3>1+6 6 6 6 6 #: i.(6^5)-1)%6^5   NB. direct count
+
+   sim=: 3 : '2=+/3>1+?5#6'                     NB. simulation
+   (+/%#)(sim"0)1e5#0
+
+NB. 51) https://math.stackexchange.com/questions/1061083/average-time-to-fill-boxes-with-balls/
+   'm n'=: 3 5
+   sim=: 3 : 0
+a=:m
+c=:0
+while. (a>0) do.
+b=:+/~:?n#a
+a=:a-b
+c=:c+1
+end.
+c return.
+)
+    (+/%#)(sim"0)1e5#0
+    
+NB 52)  https://math.stackexchange.com/questions/1097630/break-a-stick-into-2-expected-length-of-shorter-stick
+   a=:?1e6#0
+   (+/%#)<./"1 a,.(1-a)    
