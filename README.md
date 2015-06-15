@@ -69,3 +69,5 @@ This directory contains some simulations done in [J](http://jsoftware.com/), an 
 50. https://math.stackexchange.com/questions/951236/probability-of-exactly-2-low-rolls-in-5-throws-of-a-die
 51. https://math.stackexchange.com/questions/1061083/average-time-to-fill-boxes-with-balls/
 52. https://math.stackexchange.com/questions/1097630/break-a-stick-into-2-expected-length-of-shorter-stick
+53. https://math.stackexchange.com/questions/1157960/basic-card-dealing-probability
+54. https://math.stackexchange.com/questions/1325895/direction-on-how-to-rightly-compute-a-certain-expected-value
