@@ -77,11 +77,11 @@ c return.
 )
     (+/%#)(sim"0)1e5#0
     
-NB 52) https://math.stackexchange.com/questions/1097630/break-a-stick-into-2-expected-length-of-shorter-stick
+NB. 52) https://math.stackexchange.com/questions/1097630/break-a-stick-into-2-expected-length-of-shorter-stick
    a=:?1e6#0
    (+/%#)<./"1 a,.(1-a)    
    
-NB 53) https://math.stackexchange.com/questions/1157960/basic-card-dealing-probability
+NB. 53) https://math.stackexchange.com/questions/1157960/basic-card-dealing-probability
     a=:4#1,2,3,4
     sim=: 3 : '1=+/~:(3?16){a'
     sim2=: 3 : '11=+/(?3#16){a'
@@ -89,3 +89,10 @@ NB 53) https://math.stackexchange.com/questions/1157960/basic-card-dealing-proba
     (+/%#)(sim"0)1e5#0
     (+/%#)(sim2"0)1e5#0
     (+/%#)(sim3"0)1e5#0
+    
+NB. 54) https://math.stackexchange.com/questions/1325895/direction-on-how-to-rightly-compute-a-certain-expected-value
+   sim=: 3 : 0
+a=:1+13?13
+1+(3{a)*(3<I.13 = a)
+) 
+   (+/%#)(sim"0)1e5#0
