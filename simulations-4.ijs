@@ -96,3 +96,13 @@ a=:1+13?13
 1+(3{a)*(3<I.13 = a)
 ) 
    (+/%#)(sim"0)1e5#0
+   
+NB. 55) https://math.stackexchange.com/questions/1334544/off-by-1-lottery-probability/
+   n=: 9
+   k=: 5
+   sim=: 3 : 0
+a=:/:~k?n
+win=:/:~k?n
+k=(+/0=|a-win)+(+/1=|a-win)
+)
+   (+/%#)(sim"0)1e6#0
