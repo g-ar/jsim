@@ -71,3 +71,5 @@ This directory contains some simulations done in [J](http://jsoftware.com/), an 
 52. https://math.stackexchange.com/questions/1097630/break-a-stick-into-2-expected-length-of-shorter-stick
 53. https://math.stackexchange.com/questions/1157960/basic-card-dealing-probability
 54. https://math.stackexchange.com/questions/1325895/direction-on-how-to-rightly-compute-a-certain-expected-value
+55. https://math.stackexchange.com/questions/1334544/off-by-1-lottery-probability
+56. https://math.stackexchange.com/questions/1485546/how-many-tickets-should-i-buy-to-win-a-prize-in-lottery
