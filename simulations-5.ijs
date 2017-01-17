@@ -11,3 +11,9 @@ a=:(10?10){lst
 )
     (+/%#)(sim"0)1e6#0
 
+NB. 58) https://math.stackexchange.com/questions/2094936/expected-length-of-a-sequence
+    a =: 0,i.7
+    sim =: 3 : 0
+>:{.I.4<+/\(?20#8){a
+)
+    (+/%#)(sim"0)1e6#0
